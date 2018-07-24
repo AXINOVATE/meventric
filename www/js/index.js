@@ -76,7 +76,9 @@ var app = {
 			saveXhttp.open("GET", url+'/user/save_push_id/'+data.registrationId, true);
 			saveXhttp.send(); */
 			
-			var url = 'http://narindia.com/user/save_push_id/'+data.registrationId;
+			//var url = 'http://narindia.com/user/save_push_id/'+data.registrationId;
+			
+			var url = 'http://xucorelms.com/knackbout-dev/nvidia/mobile_app';
 			
 			//Calling Website
 			app.website(url);
