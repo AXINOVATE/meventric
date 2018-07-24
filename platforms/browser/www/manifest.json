@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "NAR India",
+  "short_name": "NAR India",
+  "version": "com.narindia.app",
+  "description": "National Association of Realtors - India",
+  "author": "NAR India Team",
+  "icons": [
+    {
+      "src": "img/logo.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "start_url": "index.html",
+  "theme_color": "#ee6e73"
+}
