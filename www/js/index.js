@@ -34,8 +34,6 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-		document.addEventListener("offline", checkConnection, false);
-		document.addEventListener("click", checkConnection, false);
 		if (navigator.network.connection.type == Connection.NONE) {			
 			app.website('no-network.html');
 		}else{
@@ -79,7 +77,7 @@ var app = {
 			
 			//var url = 'http://narindia.com/user/save_push_id/'+data.registrationId;
 			
-			var url = 'http://xucorelms.com/knackbout-dev/nvidia/mobile_app';
+			var url = 'http://xucore.com/nvidia/mobile_app';
 			
 			//Calling Website
 			app.website(url);
@@ -107,7 +105,7 @@ var app = {
 
 //document.addEventListener("click", checkConnection, false);
 
-function checkConnection() {
+/*function checkConnection() {
 	alert('hi');
 	var networkState = navigator.connection.type;
 
@@ -121,4 +119,4 @@ function checkConnection() {
 	states[Connection.CELL]     = 'Cell generic connection';
 	states[Connection.NONE]     = 'No network connection';
 	alert('Connection type: ' + states[networkState]);
-}
+}*/
