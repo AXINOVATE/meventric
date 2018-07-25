@@ -38,7 +38,6 @@ var app = {
 			app.website('no-network.html');
 		}else{
 			console.log('Received Device Ready Event');
-			console.log('calling setup push');
 			app.setupPush(); 
 		}       
     },
