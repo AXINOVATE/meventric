@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.xucore.eventric" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Gammer Connect</name>
+    <name>Gamer Connect</name>
     <description>
-        Gammer Connect
+        Gamer Connect
     </description>
     <author email="info@axinovate.com" href="http://axinovate.com">
         Axinoavte Team
