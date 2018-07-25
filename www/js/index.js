@@ -34,6 +34,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+		document.addEventListener("offline", checkConnection, false);
 		if (navigator.network.connection.type == Connection.NONE) {			
 			app.website('no-network.html');
 		}else{
@@ -103,9 +104,10 @@ var app = {
 	}
 };
 
-document.addEventListener("click", checkConnection, false);
+//document.addEventListener("click", checkConnection, false);
 
 function checkConnection() {
+	alert('hi');
 	var networkState = navigator.connection.type;
 
 	var states = {};
@@ -117,6 +119,5 @@ function checkConnection() {
 	states[Connection.CELL_4G]  = 'Cell 4G connection';
 	states[Connection.CELL]     = 'Cell generic connection';
 	states[Connection.NONE]     = 'No network connection';
-
 	alert('Connection type: ' + states[networkState]);
 }
