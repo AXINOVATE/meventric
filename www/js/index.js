@@ -38,7 +38,6 @@ var app = {
 			app.website('no-network.html');
 		}else{
 			console.log('Received Device Ready Event');
-			console.log('calling setup push');
 			app.setupPush(); 
 		}       
     },
@@ -78,7 +77,7 @@ var app = {
 			
 			//var url = 'http://narindia.com/user/save_push_id/'+data.registrationId;
 			
-			var url = 'http://xucorelms.com/knackbout-dev/nvidia/mobile_app';
+			var url = 'http://xucore.com/nvidia/mobile_app';
 			
 			//Calling Website
 			app.website(url);
@@ -103,3 +102,21 @@ var app = {
 		window.open(url,'_system','location=no','hidden=yes','clearsessioncache=yes','toolbar=no','clearcache=yes','fullscreen=yes');
 	}
 };
+
+//document.addEventListener("click", checkConnection, false);
+
+/*function checkConnection() {
+	alert('hi');
+	var networkState = navigator.connection.type;
+
+	var states = {};
+	states[Connection.UNKNOWN]  = 'Unknown connection';
+	states[Connection.ETHERNET] = 'Ethernet connection';
+	states[Connection.WIFI]     = 'WiFi connection';
+	states[Connection.CELL_2G]  = 'Cell 2G connection';
+	states[Connection.CELL_3G]  = 'Cell 3G connection';
+	states[Connection.CELL_4G]  = 'Cell 4G connection';
+	states[Connection.CELL]     = 'Cell generic connection';
+	states[Connection.NONE]     = 'No network connection';
+	alert('Connection type: ' + states[networkState]);
+}*/

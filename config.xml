@@ -84,5 +84,10 @@
         <variable name="SENDER_ID" value="XXXXXXX" />
     </plugin>
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
+	<feature name="NetworkStatus">
+		<param name="ios-package" value="CDVConnection" />
+		<param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+	</feature>
+	
     <engine name="browser" spec="^5.0.3" />
 </widget>
