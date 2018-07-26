@@ -37,8 +37,9 @@ var app = {
 		if (navigator.network.connection.type == Connection.NONE) {			
 			app.website('no-network.html');
 		}else{
-			console.log('Received Device Ready Event');
-			app.setupPush(); 
+			console.log('Received Device Ready Event');			
+			var url = 'http://xucore.com/nvidia/mobile_app';			
+			app.website(url); 
 		}       
     },
     setupPush: function() {
