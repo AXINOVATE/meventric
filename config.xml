@@ -14,6 +14,7 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
+	<preference name="AutoHideSplashScreen" value="true" />
     <icon src="www/img/logo.png" />
     <platform name="android">
         <preference name="SplashMaintainAspectRatio" value="true"/>
@@ -54,12 +55,16 @@
 		<icon src="www/res/icon/ios/icon-167.png" width="167" height="167"/>
 		<icon src="www/res/icon/ios/icon-83.5@2x.png" width="167" height="167"/>
 		 <!--  Storyboard portrait  -->
-		<splash src="www/res/screen/ios/Default@2x~iphone~anyany.png"/>
-		<splash src="www/res/screen/ios/Default@2x~iphone~comany.png"/>
-		<splash src="www/res/screen/ios/Default@3x~iphone~anyany.png"/>
-		<splash src="www/res/screen/ios/Default@3x~iphone~comany.png"/>
-		<splash src="www/res/screen/ios/Default@2x~ipad~anyany.png"/>
-		<splash src="www/res/screen/ios/Default@2x~ipad~comany.png"/>
+		<splash height="1136" platform="ios" src="www/res/screen/ios/gc_splash_screen_640X1136.png" width="640" />
+        <splash height="1334" platform="ios" src="www/res/screen/ios/gc_splash_screen_750X1334.png" width="750" />
+        <splash height="2208" platform="ios" src="www/res/screen/ios/gc_splash_screen_1242X2208.png" width="1242" />
+        <splash height="1242" platform="ios" src="www/res/screen/ios/gc_splash_screen_2208X1242.png" width="2208" />
+        <splash height="1536" platform="ios" src="www/res/screen/ios/gc_splash_screen_2048X1536.png" width="2048" />
+        <splash height="768" platform="ios" src="www/res/screen/ios/gc_splash_screen_1024X768.png" width="1024" />
+        <splash height="2048" platform="ios" src="www/res/screen/ios/gc_splash_screen_1536X2048.png" width="1536" />
+        <splash height="1024" platform="ios" src="www/res/screen/ios/gc_splash_screen_768X1024.png" width="768" />
+        <splash height="960" platform="ios" src="www/res/screen/ios/gc_splash_screen_640X960.png" width="640" />
+        <splash height="480" platform="ios" src="www/res/screen/ios/gc_splash_screen_320X480.png" width="320" />
     </platform>
     <access origin="*" />
     <allow-intent href="*" />
